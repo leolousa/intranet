@@ -1,23 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RodapeComponent } from './rodape/rodape.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { HomeComponent } from './home/home.component';
-
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ],
   declarations: [
     CabecalhoComponent,
-    RodapeComponent,
-    HomeComponent
+    HomeComponent,
+    RodapeComponent
   ],
   exports: [
     CabecalhoComponent,
-    RodapeComponent,
-    HomeComponent
+    HomeComponent,
+    RodapeComponent
   ],
   providers: [
   ]
